@@ -76,7 +76,7 @@ struct DZPageScrollViewDelegateReseponse {
     UITapGestureRecognizer* rightTapRcg = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleToRightRecognizer:)];
     rightTapRcg.numberOfTapsRequired = 1;
     rightTapRcg.numberOfTouchesRequired = 1;
- 
+    
     _rightArrowIndicatorView.userInteractionEnabled = YES;
     [_rightArrowIndicatorView addGestureRecognizer:rightTapRcg];
     
@@ -167,11 +167,11 @@ struct DZPageScrollViewDelegateReseponse {
     //
     _delegateResponse.funcGetPageCell = [_pageDelegate respondsToSelector:@selector(pageScrollView:cellAtIndex:)];
     NSAssert(_delegateResponse.funcGetPageCell, @"not impletion the selector pageScrollView:cellAtIndex:");
-
+    
     if (_delegateResponse.funcNumberOfPages) {
         _numberOfPages = [_pageDelegate numberOfPagesInPageScrollView:self];
     }
-
+    
     if ([_pageDelegate respondsToSelector:@selector(bottomToolsViewOfPageScrollView:)]) {
         if (_bottomToolView) {
             [_bottomToolView removeFromSuperview];
@@ -179,13 +179,13 @@ struct DZPageScrollViewDelegateReseponse {
         _bottomToolView = [_pageDelegate bottomToolsViewOfPageScrollView:self];
         [self addSubview:_bottomToolView];
     }
-
+    
     self.contentSize = CGSizeMake(CGRectViewWidth *MAX(_numberOfPages , 1), CGRectViewHeight);
     if ([_pageDelegate respondsToSelector:@selector(topToolsViewOfPageScrollView:)]) {
         [_topToolView removeFromSuperview];
         _topToolView = [_pageDelegate topToolsViewOfPageScrollView:self];
         [self addSubview:_topToolView];
-
+        
     }
     [self layoutSubviews];
 }
@@ -317,7 +317,7 @@ struct DZPageScrollViewDelegateReseponse {
         _pageCellEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
     }
     
-
+    
     
     //
     if ([_pageDelegate respondsToSelector:@selector(edgeInsetsOfTopToolViewInPageScrollView:)]) {
@@ -384,7 +384,7 @@ struct DZPageScrollViewDelegateReseponse {
         
         _bottomToolView.frame = rect;
         
-
+        
         [self bringSubviewToFront:_bottomToolView];
     }
     
@@ -426,9 +426,18 @@ struct DZPageScrollViewDelegateReseponse {
     }
 }
 
+- (void) reloadNumberofPages
+{
+    if (_delegateResponse.funcNumberOfPages) {
+        _numberOfPages = [_pageDelegate numberOfPagesInPageScrollView:self];
+    }
+    self.contentSize = CGSizeMake(CGRectViewWidth *MAX(_numberOfPages , 1), CGRectViewHeight);
+    
+}
+
 - (void) insertObjectAtIndex:(NSInteger)index
 {
-
+    
     DZPageScrollViewCell* currentCell = [self currentPageScrollCell];
     
     NSArray* cells = [self _allCells];
@@ -445,6 +454,8 @@ struct DZPageScrollViewDelegateReseponse {
         }];
     }
     
+    [self reloadNumberofPages];
+    
     DZPageScrollViewCell* cell = [self _cellForIndex:index];
     cell.index = index;
     CGRect cellRect = [self _rectOfPageAtIndex:index];
@@ -455,7 +466,7 @@ struct DZPageScrollViewDelegateReseponse {
         }
     }
     [self addSubview:cell];
-    cell.frame = CGRectOffset(cell.frame, 0, -CGRectViewHeight);
+    cell.frame = CGRectOffset(cellRect, 0, -CGRectViewHeight);
     [UIView animateWithDuration:0.25 animations:^{
         cell.frame = cellRect;
     }];
