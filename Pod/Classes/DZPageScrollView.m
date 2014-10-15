@@ -260,7 +260,7 @@ struct DZPageScrollViewDelegateReseponse {
 - (DZPageScrollViewCell*) _cellForIndex:(NSInteger)index
 {
     NSArray* cells = [self _allCells];
-    for (DZPageScrollViewCell* cell  in cells) {
+    for (DZPageScrollViewCell* cell in cells) {
         if (cell.index == index) {
             return cell;
         }
@@ -424,6 +424,41 @@ struct DZPageScrollViewDelegateReseponse {
             [self layoutSubviews];
         }
     }
+}
+
+- (void) insertObjectAtIndex:(NSInteger)index
+{
+
+    DZPageScrollViewCell* currentCell = [self currentPageScrollCell];
+    
+    NSArray* cells = [self _allCells];
+    for (DZPageScrollViewCell* cell  in cells) {
+        if (cell.index >= index) {
+            cell.index +=1;
+        }
+    }
+    if (currentCell) {
+        [UIView animateWithDuration:0.25 animations:^{
+            CGRect frame = currentCell.frame;
+            frame = CGRectOffset(frame, CGRectViewWidth, 0);
+            currentCell.frame = frame;
+        }];
+    }
+    
+    DZPageScrollViewCell* cell = [self _cellForIndex:index];
+    cell.index = index;
+    CGRect cellRect = [self _rectOfPageAtIndex:index];
+    CGRect visibleRect = [self _visibleRect];
+    if (!CGRectContainsRect(visibleRect, cell.frame) &&  CGRectContainsRect(_lastVisibleRect, cellRect)) {
+        if ([_pageDelegate respondsToSelector:@selector(pageScrollView:willDisappearCell:atIndex:)]) {
+            [_pageDelegate pageScrollView:self willDisappearCell:cell atIndex:index];
+        }
+    }
+    [self addSubview:cell];
+    cell.frame = CGRectOffset(cell.frame, 0, -CGRectViewHeight);
+    [UIView animateWithDuration:0.25 animations:^{
+        cell.frame = cellRect;
+    }];
 }
 
 @end

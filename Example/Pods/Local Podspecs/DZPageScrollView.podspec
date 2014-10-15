@@ -9,22 +9,19 @@
 
 Pod::Spec.new do |s|
   s.name             = "DZPageScrollView"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of DZPageScrollView."
+  s.version          = "1.0.0"
+  s.summary          = "按页滑动的ScrollView"
   s.description      = <<-DESC
-                       An optional longer description of DZPageScrollView
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                        按页滑动的ScrollView，并且有多种功能
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DZPageScrollView"
+  s.homepage         = "https://github.com/yishuiliunian/DZPageScrollView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "stonedong" => "yishuiliunian@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DZPageScrollView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/yishuiliunian/DZPageScrollView.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '5.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
@@ -34,5 +31,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'DZGeometryTools', '~> 1.0.0'
+  s.dependency 'DZProgrameDefines'
 end

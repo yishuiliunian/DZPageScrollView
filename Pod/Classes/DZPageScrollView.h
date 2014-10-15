@@ -77,4 +77,5 @@
 - (DZPageScrollViewCell*) dequeueReusableCell;
 - (DZPageScrollViewCell*) currentPageScrollCell;
 - (void) removeObjectAtIndex:(NSInteger)index;
+- (void) insertObjectAtIndex:(NSInteger)index;
 @end

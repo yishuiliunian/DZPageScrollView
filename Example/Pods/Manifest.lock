@@ -1,5 +1,9 @@
 PODS:
-  - DZPageScrollView (0.1.0)
+  - DZGeometryTools (1.0.0)
+  - DZPageScrollView (1.0.0):
+    - DZGeometryTools (~> 1.0.0)
+    - DZProgrameDefines
+  - DZProgrameDefines (1.0.0)
 
 DEPENDENCIES:
   - DZPageScrollView (from `../`)
@@ -9,6 +13,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DZPageScrollView: 6806ed7f6bd3f08c38878a2e09da37822893021c
+  DZGeometryTools: e1c57508aa0679684bf2ccc3a05d3b6c797c8196
+  DZPageScrollView: da6d3550fe1c01b3539d01e3871fb610833c7396
+  DZProgrameDefines: 8c89ec3a8d9aa5ef705438690ec6fa496eb2b6d5
 
 COCOAPODS: 0.34.2

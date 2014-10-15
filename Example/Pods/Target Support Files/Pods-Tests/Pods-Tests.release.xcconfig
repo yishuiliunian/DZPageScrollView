@@ -1,5 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DZPageScrollView"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DZPageScrollView"
-OTHER_LDFLAGS = -ObjC -l"Pods-Tests-DZPageScrollView"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DZGeometryTools" "${PODS_ROOT}/Headers/Public/DZPageScrollView" "${PODS_ROOT}/Headers/Public/DZProgrameDefines"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DZGeometryTools" -isystem "${PODS_ROOT}/Headers/Public/DZPageScrollView" -isystem "${PODS_ROOT}/Headers/Public/DZProgrameDefines"
+OTHER_LDFLAGS = -ObjC -l"Pods-Tests-DZGeometryTools" -l"Pods-Tests-DZPageScrollView" -l"Pods-Tests-DZProgrameDefines"
 PODS_ROOT = ${SRCROOT}/Pods
