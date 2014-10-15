@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DZPageScrollView"
-  s.version          = "1.0.0"
+  s.version          = "1.0.2"
   s.summary          = "按页滑动的ScrollView"
   s.description      = <<-DESC
                         按页滑动的ScrollView，并且有多种功能
