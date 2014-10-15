@@ -23,10 +23,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6539131919EE511800676D2A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 6539131819EE511800676D2A /* .gitkeep */; };
-		6539132119EE512E00676D2A /* DZPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6539131B19EE512E00676D2A /* DZPageScrollView.m */; };
-		6539132219EE512E00676D2A /* DZPageScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6539131D19EE512E00676D2A /* DZPageScrollViewCell.m */; };
-		6539132319EE512E00676D2A /* DZPageScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6539132019EE512E00676D2A /* DZPageScrollViewController.m */; };
+		6539132B19EE5EE300676D2A /* DZPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6539132519EE5EE300676D2A /* DZPageScrollView.m */; };
+		6539132C19EE5EE300676D2A /* DZPageScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6539132819EE5EE300676D2A /* DZPageScrollViewCell.m */; };
+		6539132D19EE5EE300676D2A /* DZPageScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6539132A19EE5EE300676D2A /* DZPageScrollViewController.m */; };
 		6D3C629E17B8B151EAA9102D /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B72BECA06C879DB5F14220CB /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -64,14 +63,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		63E647AF828E30AD085E6BCD /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6539131819EE511800676D2A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		6539131A19EE512E00676D2A /* DZPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZPageScrollView.h; path = ../../../../myproject/Travels/Travels/pageScrollView/DZPageScrollView.h; sourceTree = "<group>"; };
-		6539131B19EE512E00676D2A /* DZPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZPageScrollView.m; path = ../../../../myproject/Travels/Travels/pageScrollView/DZPageScrollView.m; sourceTree = "<group>"; };
-		6539131C19EE512E00676D2A /* DZPageScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZPageScrollViewCell.h; path = ../../../../myproject/Travels/Travels/pageScrollView/DZPageScrollViewCell.h; sourceTree = "<group>"; };
-		6539131D19EE512E00676D2A /* DZPageScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZPageScrollViewCell.m; path = ../../../../myproject/Travels/Travels/pageScrollView/DZPageScrollViewCell.m; sourceTree = "<group>"; };
-		6539131E19EE512E00676D2A /* DZPageScrollViewCell_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZPageScrollViewCell_Private.h; path = ../../../../myproject/Travels/Travels/pageScrollView/DZPageScrollViewCell_Private.h; sourceTree = "<group>"; };
-		6539131F19EE512E00676D2A /* DZPageScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZPageScrollViewController.h; path = ../../../../myproject/Travels/Travels/pageScrollView/DZPageScrollViewController.h; sourceTree = "<group>"; };
-		6539132019EE512E00676D2A /* DZPageScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZPageScrollViewController.m; path = ../../../../myproject/Travels/Travels/pageScrollView/DZPageScrollViewController.m; sourceTree = "<group>"; };
+		6539132419EE5EE300676D2A /* DZPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPageScrollView.h; sourceTree = "<group>"; };
+		6539132519EE5EE300676D2A /* DZPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPageScrollView.m; sourceTree = "<group>"; };
+		6539132619EE5EE300676D2A /* DZPageScrollViewCell_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPageScrollViewCell_Private.h; sourceTree = "<group>"; };
+		6539132719EE5EE300676D2A /* DZPageScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPageScrollViewCell.h; sourceTree = "<group>"; };
+		6539132819EE5EE300676D2A /* DZPageScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPageScrollViewCell.m; sourceTree = "<group>"; };
+		6539132919EE5EE300676D2A /* DZPageScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPageScrollViewController.h; sourceTree = "<group>"; };
+		6539132A19EE5EE300676D2A /* DZPageScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPageScrollViewController.m; sourceTree = "<group>"; };
 		761168801E66242005A22A27 /* DZPageScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DZPageScrollView.podspec; path = ../DZPageScrollView.podspec; sourceTree = "<group>"; };
 		799AB8FA1CFA3A5109AA3CCC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		97F8A88BA7B4BE8A1DEE15B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -200,14 +198,13 @@
 		6539131719EE511800676D2A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6539131A19EE512E00676D2A /* DZPageScrollView.h */,
-				6539131B19EE512E00676D2A /* DZPageScrollView.m */,
-				6539131C19EE512E00676D2A /* DZPageScrollViewCell.h */,
-				6539131D19EE512E00676D2A /* DZPageScrollViewCell.m */,
-				6539131E19EE512E00676D2A /* DZPageScrollViewCell_Private.h */,
-				6539131F19EE512E00676D2A /* DZPageScrollViewController.h */,
-				6539132019EE512E00676D2A /* DZPageScrollViewController.m */,
-				6539131819EE511800676D2A /* .gitkeep */,
+				6539132419EE5EE300676D2A /* DZPageScrollView.h */,
+				6539132519EE5EE300676D2A /* DZPageScrollView.m */,
+				6539132619EE5EE300676D2A /* DZPageScrollViewCell_Private.h */,
+				6539132719EE5EE300676D2A /* DZPageScrollViewCell.h */,
+				6539132819EE5EE300676D2A /* DZPageScrollViewCell.m */,
+				6539132919EE5EE300676D2A /* DZPageScrollViewController.h */,
+				6539132A19EE5EE300676D2A /* DZPageScrollViewController.m */,
 			);
 			name = Classes;
 			path = ../../Pod/Classes;
@@ -307,7 +304,6 @@
 			files = (
 				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6539131919EE511800676D2A /* .gitkeep in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -393,9 +389,9 @@
 			files = (
 				6003F59E195388D20070C39A /* DZAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DZViewController.m in Sources */,
-				6539132119EE512E00676D2A /* DZPageScrollView.m in Sources */,
-				6539132219EE512E00676D2A /* DZPageScrollViewCell.m in Sources */,
-				6539132319EE512E00676D2A /* DZPageScrollViewController.m in Sources */,
+				6539132B19EE5EE300676D2A /* DZPageScrollView.m in Sources */,
+				6539132C19EE5EE300676D2A /* DZPageScrollViewCell.m in Sources */,
+				6539132D19EE5EE300676D2A /* DZPageScrollViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
