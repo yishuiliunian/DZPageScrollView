@@ -1,0 +1,14 @@
+PODS:
+  - DZPageScrollView (0.1.0)
+
+DEPENDENCIES:
+  - DZPageScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  DZPageScrollView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DZPageScrollView: 6806ed7f6bd3f08c38878a2e09da37822893021c
+
+COCOAPODS: 0.34.2
